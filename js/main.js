@@ -19,8 +19,8 @@ var app = (function() {
     setUp();
   }
 
-  this.Component.knowt = (element) => {
-    console.log('knowt component');
+  this.Component.knowtator = (element) => {
+    console.log('knowtator component');
   };
 
   this.initialize = () => {
