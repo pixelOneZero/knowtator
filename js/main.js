@@ -20,7 +20,16 @@ var app = (function() {
   }
 
   this.Component.knowtator = (element) => {
-    console.log('knowtator component');
+    var mainImage = dom.querySelectorAll('#mainImage');
+
+    window.addEventListener('click', (e) => {
+      if (e.target.id === 'mainImage') {
+        var addNote = dom.querySelectorAll('#addNote');
+        if (typeof addNote !== 'undefined') {
+          addNote[0].style.display = 'block';
+        }
+      }
+    });
   };
 
   this.initialize = () => {
