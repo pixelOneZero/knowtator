@@ -7,15 +7,17 @@
 </head>
 <body>
 
-<div data-component='knowtator'>
-	<form id='addNote'>
-		<label for='noteText'>Note text</label>
-		<textarea id='noteText'></textarea>
-		<input type='submit'/>
-	</form>
+<div data-component='knowtator' id='knowtator'>
 	<div id='imageContainer'>
 		<img src='/images/0005.jpg' id='mainImage' />
 	</div>
+	<form id='addNote'>
+		<label for='noteText'>Note text</label>
+		<textarea id='noteText'></textarea>
+		<button type='button'>
+				Add note
+		</button>
+	</form>
 </div>
 
 <script src="/js/main.js"></script>
